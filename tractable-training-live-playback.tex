@@ -1,0 +1,8 @@
+\section{Tractable Training and Live Playback}
+
+Our system is scored by preferences on segments; we have a magic function $ \mathcal{R}(\sigma) $ which forms preferences by asserting $ \sigma_i \succ \sigma_j $ if and only if $ \mathcal{R}(\sigma_i) > \mathcal{R}(\sigma_j) $.
+Right away there's a problem: we have no way to decide when a segment ends.
+The menu policy could select menu items until the end of time without stopping, and that would form a valid segment.
+We can't tractibly let the policies keep going ad infinitum if we wish to compare their performance.
+
+
